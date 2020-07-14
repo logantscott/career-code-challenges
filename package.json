@@ -4,8 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --verbose --runInBand --testLocationInResults",
+    "test:watch": "npm run test -- --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "eslint": "^7.3.1",
+    "jest": "^26.1.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+  }
 }
